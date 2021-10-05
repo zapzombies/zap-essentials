@@ -1,0 +1,7 @@
+name: ${name}
+version: ${version}
+main: ${groupId}.essentials.itemstack.ZAPEssentialsPlugin
+api-version: 1.16
+commands:
+  serializestack:
+    description: Serializes the item in your hand.

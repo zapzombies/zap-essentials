@@ -1,7 +1,8 @@
 name: ${name}
 version: ${version}
-main: ${groupId}.essentials.itemstack.ZAPEssentialsPlugin
+main: ${groupId}.essentials.ZAPEssentialsPlugin
 api-version: 1.16
+depend: [ arena-api ]
 commands:
   serializestack:
     description: Serializes the item in your hand.

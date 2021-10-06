@@ -1,7 +1,6 @@
-package io.github.zap.essentials.itemstack;
+package io.github.zap.essentials;
 
 import io.github.zap.commons.BaseZapPlugin;
-import io.github.zap.commons.LoadFailureException;
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.TextComponent;
 import net.kyori.adventure.text.event.ClickEvent;
@@ -17,7 +16,7 @@ import org.bukkit.inventory.ItemStack;
 public class ZAPEssentialsPlugin extends BaseZapPlugin {
 
     @Override
-    public void doEnable() throws LoadFailureException {
+    public void doEnable() {
         this.getCommand("serializestack").setExecutor((commandSender, command, s, strings) -> {
             if (commandSender instanceof Player player) {
                 ItemStack itemStack = player.getInventory().getItemInMainHand();

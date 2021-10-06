@@ -18,9 +18,9 @@ repositories {
 
 dependencies {
     paperApi("1.16.5-R0.1-SNAPSHOT")
-    compileOnlyApi("io.github.zap:zap-commons:1.1.0")
+    compileOnlyApi("io.github.zap:zap-commons:1.1.0-SNAPSHOT-1633481053")
 
-    bukkitPlugin("io.github.zap:arena-api:1.0.0-SNAPSHOT-1633307193", qs())
+    bukkitPlugin("io.github.zap:arena-api:1.0.0-SNAPSHOT-1633481837", qs())
     bukkitPlugin("io.github.zap:zap-party:1.0.0-SNAPSHOT-1630956414", qs())
     bukkitPlugin("com.comphenix.protocol:ProtocolLib:4.7.0")
 }

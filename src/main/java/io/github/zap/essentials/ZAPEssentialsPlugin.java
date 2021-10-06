@@ -1,6 +1,6 @@
 package io.github.zap.essentials;
 
-import io.github.zap.commons.BaseZapPlugin;
+import io.github.zap.commons.ZapPlugin;
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.TextComponent;
 import net.kyori.adventure.text.event.ClickEvent;
@@ -13,7 +13,7 @@ import org.bukkit.inventory.ItemStack;
 /**
  * Plugin for general utilities for ZAP
  */
-public class ZAPEssentialsPlugin extends BaseZapPlugin {
+public class ZAPEssentialsPlugin extends ZapPlugin {
 
     @Override
     public void doEnable() {

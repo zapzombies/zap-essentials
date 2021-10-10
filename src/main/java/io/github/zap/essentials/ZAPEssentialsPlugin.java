@@ -44,13 +44,22 @@ public class ZAPEssentialsPlugin extends ZapPlugin {
                 return true;
             }
 
-            Player show = Bukkit.getPlayer(args[0]);
-            if (show == null) {
-                return true;
+            if (args[0].equals("*")) {
+                for (Plugin plugin : this.getServer().getPluginManager().getPlugins()) {
+                    for (Player show : this.getServer().getOnlinePlayers()) {
+                        player.showPlayer(plugin, show);
+                    }
+                }
             }
+            else {
+                Player show = Bukkit.getPlayer(args[0]);
+                if (show == null) {
+                    return true;
+                }
 
-            for (Plugin plugin : this.getServer().getPluginManager().getPlugins()) {
-                player.showPlayer(plugin, show);
+                for (Plugin plugin : this.getServer().getPluginManager().getPlugins()) {
+                    player.showPlayer(plugin, show);
+                }
             }
 
             return true;
